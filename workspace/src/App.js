@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import Button from './components/button';
+import InlineButton from './components/button-inline';
+import ButtonProps from './components/button-props';
+import Toolbar from './components/button-event-props';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button/>
+      <InlineButton/>
+      <br/>
+      <ButtonProps message="I'm a prop named John Doe!">John Doe</ButtonProps>
+      <ButtonProps message="I'm a prop named John Snow!">John Snow</ButtonProps>
+      <Toolbar />
     </div>
   );
 }
